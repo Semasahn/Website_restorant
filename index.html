@@ -803,27 +803,16 @@
 
       <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="Zaman" id="Zaman" placeholder="Zaman" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="Kişi Sayısı" id="people" placeholder="Kişi Sayısı" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="Mesajınız" rows="5" placeholder="Mesajınız"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Yükleniyor</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Rezervasyon </button></div>
-            </form>
-          </div><!-- End Reservation Form -->
+      <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+              <input type="text" name="Adınız" class="form-control" id="Adınız" placeholder="Adınız" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="email" class="form-control" name="E-Posta" id="E-Posta" placeholder="E-Posta" data-rule="E-Posta" data-msg="Please enter a valid email">
+              <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6">
               <input type="text" class="form-control" name="Telefon" id="Telefon" placeholder="Telefon" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -831,11 +820,34 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <input type="text" name="Tarih" class="form-control" id="Tarih" placeholder="Tarih" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="text" class="form-control" name="Zaman" id="Zaman" placeholder="Zaman" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="number" class="form-control" name="Kişi Sayısı" id="people" placeholder="Kişi Sayısı" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="Mesajınız" rows="5" placeholder="Mesajınız"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Yükleniyor</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Rezervasyon </button></div>
+        </form>
+      </div><!-- End Reservation Form -->
 
-        </div>
+    </div>
 
-      </div>
-    </section><!-- End Book A Table Section -->
+  </div>
+</section><!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
   <section id="gallery" class="gallery">
